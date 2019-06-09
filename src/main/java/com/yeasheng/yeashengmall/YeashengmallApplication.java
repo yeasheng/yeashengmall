@@ -8,6 +8,7 @@ public class YeashengmallApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(YeashengmallApplication.class, args);
+		System.out.println("启动项目");
 	}
 
 }
