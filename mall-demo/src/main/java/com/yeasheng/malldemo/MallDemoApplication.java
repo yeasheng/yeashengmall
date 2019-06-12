@@ -1,14 +1,13 @@
-package com.yeasheng.yeashengmall;
+package com.yeasheng.malldemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YeashengmallApplication {
+public class MallDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(YeashengmallApplication.class, args);
-		System.out.println("启动项目");
+		SpringApplication.run(MallDemoApplication.class, args);
 	}
 
 }
