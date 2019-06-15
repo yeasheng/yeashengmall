@@ -13,6 +13,7 @@
     <modules>
         <module>mall-util</module>
         <module>mall-demo</module>
+        <module>mall-common</module>
     </modules>
 
     <parent>
