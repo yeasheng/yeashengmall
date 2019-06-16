@@ -27,7 +27,7 @@ public class MemberEntity implements Serializable {
 	@Id
 	@GeneratedValue
 	@ApiModelProperty(value="id，新建时不传，修改时传")
-	private Long id;
+	private Integer id;
 
 	@Column
 	@ApiModelProperty(value="会员级别")

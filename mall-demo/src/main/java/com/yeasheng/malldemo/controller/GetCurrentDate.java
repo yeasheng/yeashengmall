@@ -2,6 +2,7 @@ package com.yeasheng.malldemo.controller;
 
 import com.yeasheng.malldemo.config.AuthorSettings;
 import com.yeasheng.mallutil.commonUtil.DateUtil;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author : John
  * @Version: 2019/06/15
  */
+@Api(value = "/demo", tags = "测试模块")
 @RestController
 @RequestMapping("/demo")
 public class GetCurrentDate {
