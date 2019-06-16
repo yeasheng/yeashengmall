@@ -30,6 +30,11 @@ public class WebConfiguration {
 
 	}
 
+	@Bean
+	public TestServlet testServlet() {
+		return new TestServlet();
+	}
+
 	public class MyFilter implements Filter {
 
 		@Override
