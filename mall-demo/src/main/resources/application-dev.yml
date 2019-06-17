@@ -38,7 +38,8 @@ logging:
     org:
       springframework:
         web: INFO
-
+swagger:
+  enable: false
 #author:
 #  name: "yeasheng"
 #  age: 18
