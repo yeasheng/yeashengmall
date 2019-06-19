@@ -49,7 +49,6 @@ public class MemberController {
 			MemberEntity detail = memberDao.findById(id)
 					.orElseThrow(() -> new ResourceNotFoundException("MemberEntity", "id", id));
 			copyNonNullProperties(param,detail);
-			//detail.setPhone(param.getPhone());
 			result = memberDao.save(detail);
 		} catch (ResourceNotFoundException e) {
 			e.printStackTrace();

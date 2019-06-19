@@ -10,3 +10,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface MemberDao extends JpaRepository<MemberEntity,Integer>{
 }
+
