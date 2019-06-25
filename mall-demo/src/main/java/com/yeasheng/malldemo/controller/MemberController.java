@@ -48,7 +48,7 @@ public class MemberController {
 			copyNonNullProperties(user, existing);*/
 			MemberEntity detail = memberDao.findById(id)
 					.orElseThrow(() -> new ResourceNotFoundException("MemberEntity", "id", id));
-			copyNonNullProperties(param,detail);
+			copyNonNullProperties(param, detail);
 			result = memberDao.save(detail);
 		} catch (ResourceNotFoundException e) {
 			e.printStackTrace();
@@ -68,23 +68,29 @@ public class MemberController {
 		return memberDao.findById(id).orElseThrow(() -> new ResourceNotFoundException("MemberEntity", "id", id));
 	}
 
+
+
 	private class ResourceNotFoundException extends Exception {
 
 		private ResourceNotFoundException(String memberEntity, String id, Integer id1) {
 			super.getMessage();
 		}
 	}
+
 	public static void copyNonNullProperties(Object src, Object target) {
 		BeanUtils.copyProperties(src, target, getNullPropertyNames(src));
 	}
-	public static String[] getNullPropertyNames (Object source) {
+
+	public static String[] getNullPropertyNames(Object source) {
 		final BeanWrapper src = new BeanWrapperImpl(source);
 		java.beans.PropertyDescriptor[] pds = src.getPropertyDescriptors();
 
 		Set<String> emptyNames = new HashSet<String>();
-		for(java.beans.PropertyDescriptor pd : pds) {
+		for (java.beans.PropertyDescriptor pd : pds) {
 			Object srcValue = src.getPropertyValue(pd.getName());
-			if (srcValue == null) emptyNames.add(pd.getName());
+			if (srcValue == null) {
+				emptyNames.add(pd.getName());
+			}
 		}
 		String[] result = new String[emptyNames.size()];
 		return emptyNames.toArray(result);
