@@ -7,5 +7,5 @@ package com.yeasheng.mallcommon;
 public interface IErrorCode {
     long getCode();
 
-    String getMessage();
+    String getMessage();//
 }
