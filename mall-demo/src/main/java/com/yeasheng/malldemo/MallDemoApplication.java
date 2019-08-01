@@ -25,7 +25,7 @@ public class MallDemoApplication {
 
 	/**
 	 * 配置http请求重定向至https请求
-	 * @return
+	 * @return tomcat
 	 */
 	@Bean
 	public TomcatServletWebServerFactory servletContainer() {
