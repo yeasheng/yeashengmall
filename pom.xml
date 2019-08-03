@@ -14,7 +14,9 @@
         <module>mall-util</module>
         <module>mall-demo</module>
         <module>mall-common</module>
+        <module>mall-mbg</module>
         <module>mall-eureka-server</module>
+        <module>mall-product-data-service</module>
     </modules>
 
     <parent>
