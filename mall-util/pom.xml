@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.yeasheng.yeashengmall</groupId>
     <artifactId>mall-util</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mall-util</name>
