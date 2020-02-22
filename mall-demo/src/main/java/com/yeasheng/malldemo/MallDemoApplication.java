@@ -45,7 +45,7 @@ public class MallDemoApplication {
 	}
 
 	/**
-	 * http configuration
+	 * http configuration master modify
 	 */
 	private Connector httpConnector()
 	{
